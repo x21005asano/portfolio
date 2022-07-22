@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: #fff;
+  }
+  
+  #wrapper h1{
+      font-size: 140px;
+      font-style: italic;
+  }
+  
+  
+  /* particle js を描画するエリア設定 */
+  
+  html,body{
+    height: 100%;/*高さを100%にして描画エリアをとる*/
+  }
+  
+  #particles-js{ 
+    position:fixed;/*描画固定*/
+    z-index:-1;/*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color:#35004D;/*背景色*/
+  }
+  
+  #wrapper{
+    position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    width:100%;
+    height: 100%;
+  }
+  
+  
+  /*スクロールのscc設定*/
+  
+    .pagination {
+      position:fixed;
+      right:20px;
+      top: 50%;
+        transform: translateY(-50%);
+      font-size:1em;
+      z-index: 10;
+      list-style: none;
+    }
+    
+    .pagination a {
+      display:block;
+      height:20px;
+      margin-bottom:5px;
+      color:#fff;
+      position:relative;
+      padding:4px;
+    }
+    
+    .pagination a.active:after {
+      box-shadow:inset 0 0 0 5px;
+    }
+    
+    /*現在地表示のテキストの設定*/
+    .pagination a .hover-text {
+      position:absolute;
+      right:15px;
+      top:0;
+      opacity:0;
+      -webkit-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease;
+      padding-right: 15px;
+    }
+    
+    .pagination a:hover .hover-text {
+      opacity: 1;
+    }
+    
+    .pagination a:after {
+      -webkit-transition:box-shadow 0.5s ease;
+      transition:box-shadow 0.5s ease;
+      width:10px;
+      height:10px;
+      display: block;
+      border:1px solid;
+      border-radius:50%;
+      content:"";
+      position: absolute;
+      margin:auto;
+      top:0;
+      right:3px;
+      bottom:0;
+    }
+    
+    .skillrogo{
+      font-size: 30px;
+      color: #fff;
+    }
+  
+  
+    #particles-js{ 
+      position:fixed;/*描画固定*/
+      z-index:-1;/*描画を一番下に*/
+      width: 100%;
+      height: 100%;
+      background-color:#35004D;/*背景色*/
+    }
+    
+    #wrapper{
+      position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+      z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+      width:100%;
+      height: 100%;
+    }
+    
+    
+    
+    
+    /*プロフィールのcss設定*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wrap {
+        padding: 64px 0 64px;
+        color: #fff;
+    }
+    
+    .content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 16px;
+    }
+    
+    .heading-lv1 {
+        font-size: 90px;
+        font-style: italic;
+    }
+    
+    .heading-lv2 {
+        font-size: 24px;
+    }
+    
+    .heading-lv3 {
+        font-size: 20px;
+    }
+    
+    .heading-margin {
+        margin-top: 32px;
+    }
+    
+    .text {
+        margin: 16px 0 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .text-center {
+        text-align: center;
+        font-style: italic;
+    }
+    
+    .profile-image {
+        margin: 16px 0 0;
+        text-align: center;
+    }
+    
+    .profile-image img {
+        width: 380px;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    a {
+        color: #ffffff;
+        font-size: 75px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+  
+    .profile-image2 {
+      margin: 16px 0 0;
+      text-align: center;
+  }
+    
+    .profile-image2 img {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+  }
+  
+  /*maya作品のcss設定*/
+  
+  #box1.box{
+    padding-top: 50px;
+    position: relative;
+  }
+  
+  #box1.box h1{
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 90px;
+    font-style: italic;
+  }
+
+  div.work01{
+    position: absolute;
+    top: 380px;
+    left: 140px;
+  }
+
+  div.work02{
+    position: absolute;
+    top: 320px;
+    right: 140px;
+  }
+  
+  #box2.box{
+    padding-top: 50px;
+    position: relative;
+  }
+ 
+  div.work03{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+  }
+  
+  div.work04{
+    position: absolute;
+    top: 250px;
+    right: 140px;
+  }
+  
+  
+  /*topへ*/
+  /*リンクの形状*/
+  #page-top a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size:0.6rem;
+    transition:all 0.3s;
+  }
+  
+  #page-top a:hover{
+    background: #777;
+  }
+  
+  /*リンクを右下に固定*/
+  #page-top {
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+      /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  /*　上に上がる動き　*/
+  
+  #page-top.UpMove{
+    animation: UpAnime 0.5s forwards;
+  }
+  @keyframes UpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  /*　下に下がる動き　*/
+  
+  #page-top.DownMove{
+    animation: DownAnime 0.5s forwards;
+  }
+  @keyframes DownAnime{
+    from {
+      opacity: 1;
+    transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(100px);
+    }
+  }
+
+  #box3.box{
+    position: relative;
+  }
+
+  .box3{
+    color: #fff;
+    position: absolute;
+  }
